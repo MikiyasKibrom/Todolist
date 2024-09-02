@@ -1,0 +1,17 @@
+{%extends 'main/base.html'%}
+
+{%block title%}
+<title>Delete</title>
+{%endblock%}
+
+{%block content%}
+<form method="POST">
+    {%csrf_token%}
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <button type="submit", class="btn btn-success", value="delete">Delete</button>
+        </div>
+        <input type="text", name="del">
+    </div>
+</form>
+{%endblock%}
